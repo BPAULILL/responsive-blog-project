@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog responsivo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!--Primeira parte - título / First part - Title-->
+    <header id="pageTitle">
+        <h1>The Dev News</h1>
+    </header>
+
+    <!--Segunda parte - Conteúdo Principal / Second part - Main Content --->
+    <main id="mainContent">
+        <!--Coluna a esquerda / Left Column-->
+        <section class="leftColumn"> 
+            
+            <!--Imagem da Cidade / City image-->
+            <div id="cityImage">
+                <br><br>
+                <img id="img" src="images\cidade1.png" alt="">
+                <br>
+            </div>
+
+            <!--Posts Recentes / Recent Posts-->
+            <div id="recentPostsTitle">
+                    <h2>Posts mais recentes</h2>
+                    <a href="">Ver todos</a>
+                </div>
+                <br>
+            <div id="recentPosts">
+                <div class="itemPosts">
+                    <img src="images\celular.png" alt="">
+                    <h3 class="itemPostTxt">desenvolvimento</h3>
+                    <h2 class="itemPostTxt">Desenvolvimento mobile</h2>
+                    <h1 class="itemPostTxt"><span class="boldFont">By</span> Fabio Tetsuo</h1>
+                    <p class="itemPostTxt">Lorem ipsum dolor sit amet consectetur. In vitae urna commodo amet congue integer dapibus. Interdum semper mauris convallis fusce enim odio. Vitae montes ridiculus felis.</p>
+                    <span class="dataTxt">22 Agosto 2022</span><br><br>
+                </div>
+                <div class="itemPosts">
+                    <img src="images\estabilizador.png" alt="">
+                    <h3 class="itemPostTxt">saúde</h3>
+                    <h2 class="itemPostTxt">Balancear vida profissional e pessoal</h2>
+                    <h1 class="itemPostTxt"><span class="boldFont">By</span> Ridho Satriawan</h1>
+                    <p class="itemPostTxt">Lorem ipsum dolor sit amet consectetur. Et consectetur at consectetur sed nisl tempor.</p>
+                    <br>
+                    <span class="dataTxt">22 Agosto 2022</span><br><br>
+                </div>
+                <div class="itemPosts">
+                    <img src="images\note.png" alt="">
+                    <h3 class="itemPostTxt">desenvolvimento</h3>
+                    <h2 class="itemPostTxt">Configurando VSCode</h2>
+                    <h1 class="itemPostTxt"><span class="boldFont">By</span> Fabio Tetsuo</h1>
+                    <p class="itemPostTxt">Lorem ipsum dolor sit amet consectetur. Erat interdum tortor ac sagittis id a etiam. Tellus vitae arcu dignissim massa aliquam vel tellus. Ipsum massa arcu nulla sed purus in ac.</p>
+                    <span class="dataTxt">22 Agosto 2022</span><br><br>
+                </div>
+                <div class="itemPosts">
+                    <img src="images\monitor.png" alt="">
+                    <h3 class="itemPostTxt">produtividade</h3>
+                    <h2 class="itemPostTxt">2 monitores ou 1 ultrawide?</h2>
+                    <h1 class="itemPostTxt"><span class="boldFont">By</span> Fabio Tetsuo</h1>
+                    <p class="itemPostTxt">Lorem ipsum dolor sit amet consectetur. Arcu tellus adipiscing sagittis tristique. Eget molestie posuere enim pretium venenatis nunc ligula donec a. Velit senectus amet nulla.</p>
+                    <span class="dataTxt">22 Agosto 2022</span><br><br>
+                </div>
+                
+            </div>
+          <br>
+        </section>
+
+        <!--Coluna a direita / Right Column-->
+        <section class="rightColumn">
+            
+            <!--Posts Populares / Popular Posts-->
+            <div id="popularPosts">
+                <br><br>
+                <div class="popularTitle">
+                    <h2>Posts populares</h2>
+                </div>
+                
+                <div class="popularCard">
+                    <img src="images\working.svg" alt="">
+                    <h2>Desenvolvimento atual <br><br> <span class="cardTxt">22 Agosto 2022</span> </h2>
+                </div>
+                
+                <div class="popularCard">
+                    <img src="images\gitlab.svg" alt="">
+                    <h2>GitLab vs GitHub <br><br> <span class="cardTxt">22 Agosto 2022</span> </h2></h2>
+                </div>
+                
+                <div class="popularCard">
+                    <img src="images\cafe.svg" alt="">
+                    <h2>Café atrapalha? <br><br> <span class="cardTxt">22 Agosto 2022</span> </h2></h2>
+                </div>
+            </div>
+
+            <br>
+
+            <!-- Posts por Categoria / Category Posts -->
+            <div id="categories">
+                <div id="categoriesTitle"><h2>Categorias</h2></div>
+                <div id="list">
+                    <ul class="extendedList">
+                        <li>
+                            <span class="left">> saúde</span>
+                            <span class="right">(1)</span>
+                        </li>
+                        <li>
+                            <span class="left">> desenvolvimento</span>
+                            <span class="right">(2)</span>
+                        </li>
+                        <li>
+                            <span class="left">> produtividade</span>
+                            <span class="right">(2)</span>
+                        </li>
+                        <li>
+                            <span class="left">> opinião</span>
+                            <span class="right">(1)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+     <footer id="footer">
+        <h1>Copyright@The Dev News</h1>
+     </footer>
+      
+</body>
+</html>

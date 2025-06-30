@@ -1,0 +1,629 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Montserrat;
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    background-color: white;
+}
+
+#pageTitle h1 {
+    margin: 0;
+    font-weight:  700;
+    font-size: 2.2rem;
+    color: #FFFFFF;
+}
+
+#pageTitle {
+    background-color: #02A28F;
+    background-size: auto;
+    padding: .8rem 7% .8rem 7%;
+    margin-bottom: 2.5rem;
+    width: 100vw;
+    min-width: 1024px;
+}
+
+#mainContent {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    justify-content: center;
+}
+
+
+.leftColumn {
+    flex: 7;
+    display: flex;
+    flex-direction: column;
+    margin-left: 7%;
+    padding: 0;
+}
+
+
+#cityImage {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#cityImage img {
+    width: 100%;
+    display: block;
+    margin: 0;
+    border-radius: 0.625rem;
+    min-height: 300px; 
+    max-height: 600px;
+    height: 25rem;
+}
+
+#recentPostsTitle {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    height: 4rem;
+    justify-content: space-between;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    border-radius: 0.5rem;
+    background-color: #02A28F;
+    color: white;
+}
+
+#recentPostsTitle a {
+    color: white;
+}
+
+#recentPosts {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr); 
+    column-gap: 0;
+    gap: 1rem;
+}
+
+.itemPosts {
+    background-color: white;
+    border-radius: 1rem;
+    width: 100%;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.itemPosts img{
+    width: 100%;
+    height: auto;
+    min-width: 13.3rem;
+    object-fit: cover;
+    display: block;
+    box-shadow: none;
+}
+
+.itemPosts {
+    background-color: white;
+    border-radius: 1rem;
+    width: 100%;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.itemPosts h3 {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #02A28F;
+}
+
+.itemPosts h2 {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.itemPosts p {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #000;
+}
+
+.itemPosts h1 {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #616161;
+}
+
+.dataTxt {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #616161;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.itemPostTxt {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.boldFont {
+    font-weight: 700;
+}
+
+
+.rightColumn {
+    flex: 3;
+    display: flex;
+    flex-direction: column; 
+    margin-right: 7%;
+    align-items: center;
+}
+
+#popularPosts {
+    height: 25rem;
+    min-height: 300px; 
+    max-height: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.popularTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 3rem;
+    position: static;
+    top: 7.5rem;
+    border-radius: 0.625rem;
+    background-color: #02A28F;
+    text-align: center;
+    color: white;
+}
+
+.popularCard {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 6rem;
+    background-color: white;
+    border-radius: 0.625rem;
+    gap: 2rem;
+    align-items:flex-start;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    position:static;
+    margin-top: 1.5rem;
+}
+
+.popularCard h2 {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 100%;
+    letter-spacing: 0%; 
+    margin-top: 1rem;
+}
+
+.cardTxt {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 0.75rem;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #616161;
+}
+
+.popularCard img{
+    width: 8.25rem;
+    height: 4.375rem;
+    top: 19.8125rem;
+    left: 58.5625rem;
+    border-radius: 0.625rem;
+    margin-top: 0.8125rem;
+    margin-left: 1rem;
+}
+
+#categories {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+#categoriesTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 3rem;
+    position: static;
+    border-radius: 0.625rem;
+    background-color: #02A28F;
+    text-align: center;
+    color: white;
+    margin-top: 3.475rem;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+.extendedList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%; 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #616161;
+    margin-top: .5rem;
+}
+
+.extendedList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem 0;
+  
+}
+
+.extendedList .left {
+    text-align: left;
+}
+
+.extendedList .right {
+    text-align: right;
+    color: #757575;
+}
+
+#footer h1 {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#footer {
+    background-color:#02A28F;
+    padding: 1.5rem 9.75rem 1.5rem 9.75rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    width: 100%;
+    min-width: 1024px;
+}
+
+@media only screen and (min-width: 1700px) {
+
+    #cityImage img {
+        width: 100%;
+        display: block;
+        margin: 0;
+        border-radius: 0.625rem;
+        min-height: 300px; 
+        max-height: 600px;
+        height: 40rem;
+    }
+
+    #popularPosts {
+        height: 40rem;
+        min-height: 300px; 
+        max-height: 600px;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+
+
+    #cityImage img {
+        width: 100%;
+        display: block;
+        margin: 0;
+        border-radius: 0.625rem;
+        height: 20rem;
+    }
+
+    #popularPosts {
+        height: 20rem;
+        width: 100%;
+    }
+
+    .popularCard {
+        display: flex;
+        flex-direction: row;
+        width: 22.5rem;
+        height: 4.5rem;
+        background-color: white;
+        border-radius: 0.625rem;
+        gap: 2rem;
+        align-items:flex-start;
+        box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
+        position:static;
+        margin-top: 1.5rem;
+    }
+
+    .popularCard img{
+        width: 6.25rem;
+        height: 2.875rem;
+        top: 19.8125rem;
+        left: 58.5625rem;
+        border-radius: 0.625rem;
+        margin-top: 0.8125rem;
+        margin-left: 1rem;
+    }
+
+}
+
+
+@media only screen and (max-width: 1023px) {
+
+    * {
+    box-sizing: border-box;
+    }
+        
+    #pageTitle h1 {
+        margin: 0;
+        font-weight:  700;
+        font-size: 1.5rem;
+        color: #FFFFFF;
+        padding: 0;
+    }
+
+    #pageTitle {
+        background-color: #02A28F;
+        background-size: auto;
+        margin-left: 0;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: auto;
+        margin-bottom: 0;
+    }
+
+    #mainContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0rem;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .leftColumn {
+        display: flex;
+        flex-direction: column; 
+        padding: 0;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #cityImage {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #cityImage img {
+        width: 90%;
+        height: auto;
+        gap: 0.625rem;
+        border-radius: 0.625rem;
+        padding: 1.5rem;
+        display: block;
+        margin: 0 auto;
+    }
+
+    #recentPostsTitle {
+        width: 90%;
+        height: 2.5rem;
+        justify-content: space-between;
+        padding: 0.5rem 1rem;
+        border-radius: 0.625rem;
+    }
+
+    #recentPostsTitle h2, a {
+        font-size: 1rem;
+    }
+
+    #recentPosts {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 0;
+        gap: 1rem;
+    }
+
+    #recentPosts {
+        width: 90%;
+    }
+
+    #recentPosts img {
+        width: 100%;
+    }
+
+    .itemPosts  {
+        background-color: white;
+        border-radius: 1rem;
+        width: 100%;
+        box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .itemPosts img{
+        width: auto;
+        height: auto;
+        min-width: 13.3rem;
+    }
+
+    .itemPosts h3 {
+        font-family: Montserrat;
+        font-weight: 400;
+        font-size: 0.875rem;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: #02A28F;
+    }
+
+    .itemPosts h2 {
+        font-family: Montserrat;
+        font-weight: 700;
+        font-size: 1.25rem;
+        line-height: 100%;
+        letter-spacing: 0%;
+    }
+
+    .itemPosts p {
+        font-family: Montserrat;
+        font-weight: 400;
+        font-size: 0.875rem;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: #000;
+    }
+
+    .itemPosts h1 {
+        font-family: Montserrat;
+        font-weight: 500;
+        font-size: 0.875rem;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: #616161;
+    }
+
+    .rightColumn {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    #popularPosts {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .popularTitle {   
+        width: 90%;
+        border-radius: 10px;
+    }
+
+    .popularTitle h2 {
+        font-size: 1.25rem;
+    }
+
+    .popularCard {
+        display: flex;
+        flex-direction: row;
+        height: 6rem;
+        background-color: white;
+        border-radius: 0.625rem;
+        gap: 2rem;
+        align-items:flex-start;
+        box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
+        position:static;
+        margin-top: 1.5rem;
+        width: 90%;
+    }
+
+    .popularCard h2 {
+        font-family: Montserrat;
+        font-weight: 700;
+        font-size: 0.875rem;
+        line-height: 100%;
+        letter-spacing: 0%; 
+        margin-top: 1rem;
+    }
+
+    .cardTxt {
+        font-family: Montserrat;
+        font-weight: 500;
+        font-size: 0.75rem;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: #616161;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .popularCard img{
+        width: auto;
+        height: auto;
+        border-radius: 0.625rem;
+        margin-bottom: 0.8125rem;
+        margin-left: 1rem;
+    }
+
+    #categories {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #categoriesTitle {
+        width: 100%;      
+        height: 3rem;                 
+        border-radius: 0.625rem; 
+
+    }
+
+    #categoriesTitle h2 {
+        font-size: 1.25rem;
+    }
+
+    #list {
+        width: 100%;
+    }
+
+    #footer {
+        background-color:#02A28F;
+        padding: 1rem;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+        width: 100%;
+        min-width: auto;
+        font-size: .875rem;
+    }
+}
+
